@@ -1,0 +1,47 @@
+{
+    "packages": [
+        {
+            "name": "chriskacerguis/codeigniter-restserver",
+            "version": "dev-master",
+            "version_normalized": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chriskacerguis/codeigniter-restserver.git",
+                "reference": "399d9bcefabf19242260581aa12bcd6245b6b5e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chriskacerguis/codeigniter-restserver/zipball/399d9bcefabf19242260581aa12bcd6245b6b5e3",
+                "reference": "399d9bcefabf19242260581aa12bcd6245b6b5e3",
+                "shasum": ""
+            },
+            "time": "2020-10-17T20:03:38+00:00",
+            "default-branch": true,
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-4": {
+                    "chriskacerguis\\RestServer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Kacerguis",
+                    "email": "chriskacerguis@gmail.com"
+                }
+            ],
+            "description": "CI Rest Server",
+            "support": {
+                "issues": "https://github.com/chriskacerguis/codeigniter-restserver/issues",
+                "source": "https://github.com/chriskacerguis/codeigniter-restserver/tree/master"
+            },
+            "install-path": "../chriskacerguis/codeigniter-restserver"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

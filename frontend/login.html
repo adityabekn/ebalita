@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | E-Balita</title>
+    <link rel="icon" href="assets/images/logo.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="container-login">
+      <img src="assets/images/logo.png" alt="logo" />
+
+      <div class="login">
+
+        <div class="header-login">
+          <p>Belum punya akun?</p>
+          <a id="reg-trigger" href="#">Daftar akun baru</a>
+        </div>
+
+        <div class="form-login">
+          <form action="/home.html">
+            <div class="input">
+              <label for="email">Email</label>
+              <input class="login-input" type="email" name="email" id="email" />
+              <!-- <img src="assets/svg/account.svg" alt="account"> -->
+            </div>
+            <div class="input">
+              <label for="password">Kata Sandi</label>
+              <input class="login-input" type="password" name="password" id="password" />
+              <!-- <img src="assets/svg/lock.svg" alt="lock"> -->
+            </div>
+            <button class="cursor-pointer" type="submit">MASUK</button>
+          </form>
+        </div>
+
+        <div class="footer-login">
+          <a href="#">Lupa kata sandi?</a>
+        </div>
+
+      </div>
+
+      <!--daftar akun-->
+      <div class="modal">
+
+        <div id="register-1" class="modal-body">
+          <div class="header">
+            <img class="cursor-pointer" id="modal-back-1" src="assets/svg/arrow-left.svg" alt="back">
+            <h1 class="title">Daftar Akun Baru</h1>
+          </div>
+          <div class="modal-content">
+            <form id="form-ortu">
+              <div class="input">
+                <label for="orang-tua">Nama Orang Tua</label>
+                <input type="text" id="orang-tua" name="">
+              </div>
+              <div class="input">
+                <label for="nik-ortu">NIK Orang Tua</label>
+                <input type="number" id="nik-ortu" name="">
+              </div>
+              <div class="input">
+                <label for="tgl-lahir-ortu">Tanggal Lahir</label>
+                <input type="date" id="tgl-lahir-ortu">
+              </div>
+              <div class="input">
+                <label for="email-reg">Email</label>
+                <input type="email" id="email-reg" name=""> 
+              </div>
+              <div class="input">
+                <label for="password-reg">Kata Sandi</label>
+                <input type="password" id="password-reg">
+              </div>
+              <button id="reg-submit-1" class="cursor-pointer" type="submit">DAFTAR</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="register-2" class="modal-body">
+          <div class="header">
+            <img class="cursor-pointer" id="modal-back-2" src="assets/svg/arrow-left.svg" alt="back">
+            <h1 class="title">Daftar Akun Baru</h1>
+          </div>
+          <div class="modal-content">
+            <form id="form-balita">
+              <div class="input">
+                <label for="balita">Nama Balita</label>
+                <input type="text" id="balita" name="">
+              </div>
+              <div class="input">
+                <label for="nik-balita">NIK Balita</label>
+                <input type="number" id="nik-balita" name="">
+              </div>
+              <div class="input">
+                <label for="tgl-lahir-balita">Tanggal Lahir</label>
+                <input type="date" id="tgl-lahir-balita">
+              </div>
+              <div class="input">
+                <label for="jenis-kelamin">Jenis Kelamin</label>
+                <select name="jenis-kelamin">
+                  <option value="laki-laki">Laki-laki</option>
+                  <option value="perempuan">Perempuan</option>
+              </select>
+              </div>
+              <button id="reg-submit-2" class="cursor-pointer" type="submit">SIMPAN</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal-background"></div>
+      </div>
+
+    </div>
+
+    <script src="js/modal.js"></script>
+  </body>
+</html>

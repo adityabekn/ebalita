@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    container_name: php_web
+    depends_on:
+      - db
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html/
+    network_mode: bridge
+  db:
+    image: mysql:5.7
+    container_name: db_web
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - mydb:/var/lib/mysql/
+    network_mode: bridge
+
+volumes:
+  mydb:
